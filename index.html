@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Portfolio Website - Easy Tutorials</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Pacifico&family=Righteous&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/c4254e24a8.js" crossorigin="anonymous"></script>
+</head>
+<body>
+<div id="header">
+    <div class="container">
+        <nav>
+            <img src="images/loogoo.png" class="logo">
+            <ul id="sidemenu">
+                <li><a href="#header">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#services">Projects</a></li>
+                <li><a href="#portfolio">Works</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <i class="fas fa-times" onclick="closemenu()"></i>
+            </ul>
+            <i class="fas fa-bars" onclick="openmenu()"></i>
+        </nav>
+        <div class="header-text">
+            <p>Student</p>
+            <h1>Hi, I'm <span>Hemanth Giduturi</span><br> from SRKR Engineering College</h1>
+        </div>
+    </div>
+</div>
+<!-- -----------about---------- -->
+<div id="about">
+    <div class="container">
+        <div class="row">
+            <div class="about-col-1">
+                <img src="images/mine.jpg">
+            </div>
+            <div class="about-col-2">
+                <h1 class="sub-title">About Me</h1>
+                <p>Motivated and detail-oriented Electronics and Communication Engineering undergraduate with hands-on experience in cloud computing, generative AI, and IoT. Proficient in Python, deep learning frameworks, and embedded systems, with a proven ability to deliver innovative solutions. Adept at problem-solving, creative thinking, and working collaboratively in agile environments. Seeking challenging opportunities to apply and expand technical skills in cutting-edge projects.   
+                </p>
+                <div class="tab-titles">
+                    <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                    <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                    <p class="tab-links" onclick="opentab('education')">Education</p>
+                </div>
+                <div class="tab-contents active-tab" id="skills">
+                    <ul>
+                        <li><span>Python</span><br>Advanced</li>
+                        <li><span>Java</span><br>Begginer</li>
+                        <li><span>Robotics</span><br>IOT and Embedded</li>
+                        <li><span>Web Development</span><br>HTML, CSS and Javascript</li>
+                        <li><span>Generative AI</span><br>Machine Learning</li>
+                    </ul>
+                </div>
+                <div class="tab-contents" id="experience">
+                    <ul>
+                        <li><span>Generative AI Intership</span><span class="company" >, By Blackbucks</span><br>2023 - 2024<br>English to Hindi Text translating using GAN Model</li>
+                        <li><span>AWS Cloud Internship</span><span class="company" >, By Blackbucks</span><br>2022 - 2023<br>Governing data between EC2-S3-EFS using EBS</li>
+                        <li><span>Robotics Internship</span><span class="company" >, By AICTE Idealab</span><br>2021 - 2022<br>LoRa Communication project</li>
+                    </ul>
+                </div>
+                <div class="tab-contents" id="education">
+                    <ul>
+                        <li><span>Bachelor of Engineering</span><br>2021 - 2025<br>Sagi Rama Krishnam Raju Engineering College, Bhimavaram<br> CGPA: 7.77</li>
+                        <li><span>Board of Intermediate Education</span><br>2019 - 2021<br>Tirumala Junior College, Katheru<br> Percentage: 95.6%</li>
+                        <li><span>Secondary School Certification</span><br>2018 - 2019<br>Tirumala High School, Katheru<br> CGPA: 9.7</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- ---------services---------------- -->
+<div id="services">
+    <div class="container">
+        <h1 class="sub-title">My Projects</h1>
+        <div class="services-list">
+            <div>
+                <i class="fas fa-code"></i>
+                <h2>LoRa Communication </h2>
+                <p>I utilized two LoRa modules in my project to transmit signals up to 10KM. One module transmitted data from sensors on an automated car, while the other controlled bulbs based on sensor readings. Arduino programming was used for this project.
+                </p>
+                <a href="./images/IDEAL LAB REPORT.pdf.pdf">Learn more</a>
+            </div>
+            <div>
+                <i class="fas fa-crop-alt"></i>
+                <h2>English to Hindi Text translating using GAN Model</h2>
+                <p>The project uses Deep Learning to translate English to Hindi. It involves creating a tokenizer, encoder, and decoder, training with Hindi and English text datasets, then translating the text.    
+                </p><a href="./images/Hemanth Report.pdf">Learn more</a>
+            </div>
+            <div>
+                <i class="fab fa-app-store"></i>
+                <h2>Certificate Validation Using Blockchain</h2>
+                <p>This project aims to develop a tamper-proof certificate validation system that benefits educational institutions, employers, and individuals, streamlining verification and fostering trust in credential management.
+                </p>
+                <a href="./images/blockchain project ppt.pdf">Learn more</a>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- ----------portfolio------------ -->
+<div id="portfolio">
+    <div class="container">
+        <h1 class="sub-title">My Work</h1>
+        <div class="work-list">
+            <div class="work">
+                <img src="images/work.jpeg">
+                <div class="layer">
+                    <h3>LoRa Communication Project Review</h3>
+                    <p>NBA Committe Visit on AICTE Idealab of SRKR Engineering College</p>
+                    <a href="#"><i class="fas fa-external-link-alt"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="images/work2.jpg">
+                <div class="layer">
+                    <h3>IETE Event</h3>
+                    <p>A Seminar about the Hardware in ECE</p>
+                    <a href="#"><i class="fas fa-external-link-alt"></i></a>
+                </div>
+            </div>
+        </div>
+        <a href="#" class="btn">See more</a>
+    </div>
+</div>
+<!-- ----------contact------------- -->
+<div id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+                <h1 class="sub-title">Contact Me</h1>
+                <p><i class="mail"></i> hemanthgiduturi5431@gmail.com</p>
+                <p><i class="phone"></i> +91 9133123000</p>
+                <p><i class="fas fa-phone-square-alt"></i> </p>
+                <div class="social-icons">
+                    <div class="flex"><img class="icon" src="./images/ln.webp"><a href="https://linkedin.com/in/hemanth-giduturi-3b665628a"><i class="top">Linked IN</i></a></div>
+                    <div class="flex"><img class="icon" src="./images/github.png"><a href="https://github.com/Hemanth5431"><i class="top">GitHub</i></a></div>
+                </div>
+                <a href="./images/HEMANTH.pdf" download class="btn btn2">Download CV</a>
+            </div>
+        </div>
+    </div>
+
+
+
+<script>
+
+    var tablinks = document.getElementsByClassName("tab-links");
+    var tabcontents = document.getElementsByClassName("tab-contents");
+
+    function opentab(tabname){
+        for(tablink of tablinks){
+            tablink.classList.remove("active-link");
+        }
+        for(tabcontent of tabcontents){
+            tabcontent.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
+    }
+
+</script>
+
+<script>
+
+    var sidemeu = document.getElementById("sidemenu");
+
+    function openmenu(){
+        sidemeu.style.right = "0";
+    }
+    function closemenu(){
+        sidemeu.style.right = "-200px";
+    }
+</script>
+</body>
+</html>
